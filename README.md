@@ -1,1 +1,1 @@
-react-container-query-poc
+container-queries-poc
