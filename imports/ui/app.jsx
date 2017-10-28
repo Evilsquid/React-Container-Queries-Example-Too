@@ -3,7 +3,7 @@ import classnames from 'classnames';
 import Button from './button';
 import Demo from './demo';
 
-import { query, LAYOUTS } from '../constants/react-container-query';
+import { LAYOUTS } from '../constants/react-container-query';
 
 export default class App extends Component {
   constructor(props) {
@@ -19,7 +19,6 @@ export default class App extends Component {
   }
   
  render() {
-   console.log('query ', query);
    return (
      <div className="container">
        <div className='container'>
@@ -28,7 +27,7 @@ export default class App extends Component {
           <Button onClick={() => this.selectLayout(1)} isActive={this.state.layout === 1}>tablet layout</Button>
           <Button onClick={() => this.selectLayout(2)} isActive={this.state.layout === 2}>desktop layout</Button>
         </div>
-        <div><Demo query={query} width={LAYOUTS[this.state.layout]}/></div>
+        <div><Demo width={LAYOUTS[this.state.layout].width} height={LAYOUTS[this.state.layout].height} /></div>
       </div>
 
      </div>
