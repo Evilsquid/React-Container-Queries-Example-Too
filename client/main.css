@@ -1,6 +1,6 @@
   /* Main */
   .container {
-    height: 100vh
+    height: 100vh;
   }
   
   .demo-container {
@@ -39,9 +39,14 @@
    align-items: center;
    height: 115px;
   }
+
+    .subtext button {
+      margin-left: 10px;
+    }
+
     /* This is where the magic happens */
     .demo-container.small-mobile .iconography {
-      height: 180px;
+      height: 162px;
     }
 
     .demo-container.small-mobile img {
