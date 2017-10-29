@@ -1,1 +1,1 @@
-container-queries-poc
+The purpose of this project is to use the react-container-query module to build pages that are responsive and do not container queries in lieu of media queries (that rely on viewport size over container size).
