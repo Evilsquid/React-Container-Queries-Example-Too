@@ -19,17 +19,17 @@ export default class App extends Component {
   }
   
  render() {
+   const isToggleShown = false;
    return (
      <div className="container">
-       <div className='container'>
+         {isToggleShown &&
         <div className='controls'>
           <Button onClick={() => this.selectLayout(0)} isActive={this.state.layout === 0}>mobile layout</Button>
           <Button onClick={() => this.selectLayout(1)} isActive={this.state.layout === 1}>tablet layout</Button>
           <Button onClick={() => this.selectLayout(2)} isActive={this.state.layout === 2}>desktop layout</Button>
         </div>
-        <div><Demo width={LAYOUTS[this.state.layout].width} height={LAYOUTS[this.state.layout].height} /></div>
-      </div>
-
+        }
+        <Demo width={LAYOUTS[this.state.layout].width} height={LAYOUTS[this.state.layout].height} />
      </div>
    );
  }

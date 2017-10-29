@@ -12,7 +12,8 @@ class DemoContainer extends Component {
 
     render() {
         const { query, width, height, containerQuery } = this.props;
-        console.log('demo props: ', this.props);
+        const layoutType = '' + containerQuery;
+        console.log('containerQuery: ', this.props.containerQuery);
         return (
             <div className={classnames('demo-container', containerQuery)}>
                 <Content />

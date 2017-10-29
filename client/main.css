@@ -50,12 +50,16 @@
    padding: 0px;
  }
  /* Main */
+ .container {
+   height: 100vh
+ }
  .demo-container {
    background-color: white;
    padding: 10px 10px 0;
    position: relative;
    overflow: hidden;
    margin: 0 auto;
+   height: 100%;
  }
  .controls {
   display: flex;

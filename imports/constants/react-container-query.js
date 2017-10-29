@@ -1,7 +1,21 @@
 export const query = {
-  'mobile': {
+  'small-mobile': {
     minWidth: 320,
-    maxWidth: 599
+    maxWidth: 599,
+    minHeight: 480,
+    maxHeight: 567
+  },
+  'medium-mobile': {
+    minWidth: 320,
+    maxWidth: 599,
+    minHeight: 568,
+    maxHeight: 666
+  },
+  'large-mobile': {
+    minWidth: 320,
+    maxWidth: 599,
+    minHeight: 667,
+    maxHeight: 1023
   },
   'tablet': {
     minWidth: 1024,
