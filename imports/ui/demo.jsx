@@ -11,11 +11,11 @@ class DemoContainer extends Component {
     }
 
     render() {
-        const { query, width, height } = this.props;
+        const { query, width, height, containerQuery } = this.props;
         console.log('demo props: ', this.props);
         return (
-            <div className={classnames('demo-container')} style={{ width: `${width}px`, height: `${height}px`}}>
-                Content
+            <div className={classnames('demo-container', containerQuery)}>
+                <Content />
             </div>
         );
     }

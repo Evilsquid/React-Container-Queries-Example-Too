@@ -14,5 +14,5 @@ export default class Content extends Component {
 }
 
 Content.PropTypes = {
-    layoutType: PropTypes.string
+    layoutType: PropTypes.any
 }
