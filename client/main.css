@@ -1,3 +1,67 @@
+  /* Main */
+  .container {
+    height: 100vh
+  }
+  
+  .demo-container {
+    background-color: white;
+    padding: 10px 10px 0;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 100%;
+  }
+ 
+  .controls {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+  }
+  
+  .heading {
+     background-color: gray;
+     height: 115px;
+     display: flex;
+     font-size: 20px;
+     justify-content: center;
+     align-items: center;
+  }
+  .iconography {
+   height: 254px;
+   background-color: darkgrey;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  .subtext {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 115px;
+  }
+    /* This is where the magic happens */
+    .demo-container.small-mobile .iconography {
+      height: 180px;
+    }
+
+    .demo-container.small-mobile img {
+      width: 130px;
+    }
+ 
+  .cta {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 50px;
+   background-color: silver;
+  }
+
+
+
+  /* Below are reset/base css */
+ 
+ 
+ 
  /* Reset */
  html, body, div, span, applet, object, iframe,
  h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -49,23 +113,3 @@
    background-color: rgb(40, 154, 207);
    padding: 0px;
  }
- /* Main */
- .container {
-   height: 100vh
- }
- 
- .demo-container {
-   background-color: white;
-   padding: 10px 10px 0;
-   position: relative;
-   overflow: hidden;
-   margin: 0 auto;
-   height: 100%;
- }
-
- .controls {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
- }
- 
